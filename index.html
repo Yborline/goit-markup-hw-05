@@ -109,7 +109,7 @@
         <section class="hero">
             <div class="container">
             <h2 class="hero-title">Эффективные решения для вашего бизнеса</h2>
-            <button type="button" class="button-color">Заказать услугу</button>
+            <button data-modal-open type="button" class="button-color">Заказать услугу</button>
             </div>
         </section>
 
@@ -162,9 +162,13 @@
             <div class="container">
                <h2 class="block-tittle">Чем мы занимаемся</h2>
                 <ul class="work-list">
-                   <li><img src="images/img.jpg" alt="набор текста на планшете" width="370"></li>
-                    <li><img src="images/box2.jpg" alt="nелефон и ноутбук" width="370"></li>
-                    <li><img src="images/box3.jpg" alt="палитра цветов" width="370"></li>
+                   <li class="background-img"><img src="images/img.jpg" class="img-list" alt="набор текста на планшете" >
+                <p >ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p></li>
+                    <li class="background-img"><img src="images/box2.jpg" class="img-list" alt="nелефон и ноутбук" >
+                <p >МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p></li>
+                    <li class="background-img"><img src="images/box3.jpg" class="img-list" alt="палитра цветов" >
+                <p >ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                    </li>
                 </ul>  
             </div>
         </section>
@@ -413,5 +417,21 @@
          </div>
 
       </footer>
+    <div class="backdrop is-hidden" id="modal" data-modal>
+        <div class="modal-content" id="modal-content">
+            <button data-modal-close type="button"><span class="close-but">&#10006;</span></button>
+            <!-- <form>
+              <input type="text" name="" id="" />
+            </form> -->
+            <p style="text-align: center;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum
+                adipisci aliquam blanditiis atque laudantium iste, ea possimus iure
+                repellendus, incidunt, quidem quisquam unde reprehenderit eveniet
+                illum debitis quaerat?
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
