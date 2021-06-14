@@ -44,7 +44,6 @@ body {
 
 /* Анимации */
 
-/* Навигация сайта  */
 .site-nav .link {
   display: flex;
   flex-direction: column;
@@ -57,9 +56,11 @@ body {
   height: 4px;
   background-color: var(--blue-color);
   align-self: flex-end;
-  margin: 28px 0px 0px 0px;
+  /* margin: 28px 0px 0px 0px; */
   border-radius: 2px;
   z-index: 2;
+  position: absolute;
+  top: 41px;
 }
 .studio:after {
   width: 49px;
@@ -116,6 +117,7 @@ body {
   width: 294px;
   justify-content: space-between;
   margin-left: 93px;
+  position: relative;
 }
 .contact-nav {
   display: flex;
@@ -422,7 +424,7 @@ body {
 .profession {
   font-size: 16px;
   line-height: 1.188;
-  /* text-align: center; */
+
   letter-spacing: 0.03em;
   color: var(--tell-color);
   padding: 10px 0px 16px;
@@ -472,14 +474,12 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
   opacity: 1;
-  z-index: 1;
   overflow: auto;
 }
 .card-container {
   position: relative;
   width: 370px;
   height: 404px;
-  overflow: hidden;
 }
 
 .background-blue {
@@ -488,11 +488,10 @@ body {
   left: 0;
   width: 370px;
   height: 294px;
-  transform: translateY(100%);
+  transform: translateY(60%);
   background: rgba(33, 150, 243, 0.9);
   border: Solid rgba(33, 150, 243, 0.9);
   opacity: 0;
-  z-index: 1;
 }
 
 .text-background {
@@ -679,7 +678,7 @@ body {
 .backdrop {
   position: fixed;
 
-  transition: transform 1s linear;
+  transition: transform 150ms linear;
   top: 0;
   left: 0;
   transform: translate(0);
@@ -723,4 +722,11 @@ body {
 }
 .close-but {
   padding: 3px 3px 4px 4px;
+}
+.icons-button {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 3px;
 }
